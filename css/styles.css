@@ -539,6 +539,8 @@ address {
 }
 
 .footer-form-title {
+    display: block;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -563,12 +565,12 @@ address {
     border-radius: 4px;
     padding: 15px 16px;
     outline: transparent;
-    color: var(--active-color);
+    color: var(--color-white);
 
     transition: border-color var(--transition-d-tf);
 }
 .footer-input:focus {
-    border-color: var(--color-white);
+    border-color: var(--active-color);
 }
 .footer-input::placeholder {
     font-size: 16px;
@@ -708,6 +710,7 @@ address {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 40px;
+    padding-right: 12px;
     outline: transparent;
 
     transition: border-color var(--transition-d-tf)
@@ -741,11 +744,14 @@ address {
 
     transition: border-color var(--transition-d-tf);
 }
+.modal-comment,
 .modal-comment::placeholder {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
+}
+.modal-comment::placeholder {
     color: rgba(117, 117, 117, 0.5);
 }
 .modal-comment:focus {
@@ -785,7 +791,7 @@ address {
 .modal-check:checked + .check-label span {
     fill: var(--color-white);
     background-color: var(--active-color);
-    border: none;
+    border: 2px solid var(--active-color);
 }
 .contract-link {
     color: var(--active-color);
