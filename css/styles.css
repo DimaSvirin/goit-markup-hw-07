@@ -217,6 +217,7 @@ address {
 .hero-btn:focus {
     background-color: #188CE8;
 }
+
 /* features */
 .features {
     padding-bottom: 0;
@@ -532,7 +533,7 @@ address {
 .footer-soc-link:focus {
     background-color: var(--active-color);
 }
-
+/* SING UP */
 .footer-singup {
     display: block;
     margin-left: auto;
