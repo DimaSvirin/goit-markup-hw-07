@@ -68,19 +68,19 @@
     color: var(--icon-main-color);
 
     transition: background-color var(--transition-d-tf);
+
+    &:hover,
+    &:focus {
+        background-color: var(--active-color);
+    }
 }
 
 .team-soc-icon {
     transition: fill var(--transition-d-tf);
     fill: currentColor;
-}
 
-.team-soc-link:hover,
-.team-soc-link:focus {
-    background-color: var(--active-color);
-}
-
-.team-soc-link:hover .team-soc-icon,
-.team-soc-link:focus .team-soc-icon {
-    fill: var(--color-white);
+    .team-soc-link:hover &,
+    .team-soc-link:focus & {
+        fill: var(--color-white);
+    }
 }

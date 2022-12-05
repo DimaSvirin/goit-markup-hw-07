@@ -35,11 +35,11 @@
     transition: color var(--transition-d-tf),
         background-color var(--transition-d-tf),
         box-shadow var(--transition-d-tf);
-}
 
-.filters-btn:hover,
-.filters-btn:focus {
-    color: var(--color-white);
-    background-color: var(--active-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    &:hover,
+    &:focus {
+        color: var(--color-white);
+        background-color: var(--active-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
 }

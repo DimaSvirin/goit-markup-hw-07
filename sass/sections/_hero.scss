@@ -1,8 +1,4 @@
 /* HERO SECTION */
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .hero-section {
     max-width: 1600px;
@@ -44,9 +40,9 @@
     border-color: transparent;
 
     transition: background-color var(--transition-d-tf);
-}
 
-.hero-btn:hover,
-.hero-btn:focus {
-    background-color: #188CE8;
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+    }
 }

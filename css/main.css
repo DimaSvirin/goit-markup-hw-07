@@ -74,6 +74,11 @@ address {
   /* outline: 2px solid red; */
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* BACKDROP */
 .backdrop {
   position: fixed;
@@ -116,9 +121,7 @@ address {
   top: 8px;
   transition: fill var(--transition-d-tf);
 }
-
-.modal-btn-close:hover,
-.modal-btn-close:focus {
+.modal-btn-close:hover, .modal-btn-close:focus {
   fill: var(--active-color);
 }
 
@@ -135,7 +138,7 @@ address {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-color);
   margin-bottom: 12px;
 }
 
@@ -149,7 +152,6 @@ address {
   margin-bottom: 10px;
   width: 100%;
 }
-
 .modal-field:nth-of-type(4n) {
   margin-bottom: 20px;
 }
@@ -176,7 +178,6 @@ address {
   outline: transparent;
   transition: border-color var(--transition-d-tf);
 }
-
 .modal-input:focus {
   border-color: var(--active-color);
 }
@@ -272,7 +273,6 @@ address {
   fill: transparent;
   transition: fill var(--transition-d-tf), background-color var(--transition-d-tf), border var(--transition-d-tf);
 }
-
 .modal-check:checked + .check-label span {
   fill: var(--color-white);
   background-color: var(--active-color);
@@ -301,9 +301,7 @@ address {
   margin-top: 30px;
   transition: background-color var(--transition-d-tf);
 }
-
-.modal-btn-send:hover,
-.modal-btn-send:focus {
+.modal-btn-send:hover, .modal-btn-send:focus {
   background-color: #188CE8;
 }
 
@@ -360,9 +358,7 @@ address {
 .header-nav .link {
   transition: color var(--transition-d-tf);
 }
-
-.header-nav .link:hover,
-.header-nav .link:focus {
+.header-nav .link:hover, .header-nav .link:focus {
   color: var(--active-color);
 }
 
@@ -408,23 +404,13 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-}
-
-.header-contacts-item .link {
   transition: color var(--transition-d-tf);
 }
-
-.header-contacts .link:hover,
-.header-contacts .link:focus {
+.header-contacts-item .link:hover, .header-contacts-item .link:focus {
   color: var(--active-color);
 }
 
 /* HERO SECTION */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .hero-section {
   max-width: 1600px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgimage.jpg);
@@ -462,9 +448,7 @@ address {
   border-color: transparent;
   transition: background-color var(--transition-d-tf);
 }
-
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-btn:hover, .hero-btn:focus {
   background-color: #188CE8;
 }
 
@@ -609,19 +593,15 @@ address {
   color: var(--icon-main-color);
   transition: background-color var(--transition-d-tf);
 }
+.team-soc-link:hover, .team-soc-link:focus {
+  background-color: var(--active-color);
+}
 
 .team-soc-icon {
   transition: fill var(--transition-d-tf);
   fill: currentColor;
 }
-
-.team-soc-link:hover,
-.team-soc-link:focus {
-  background-color: var(--active-color);
-}
-
-.team-soc-link:hover .team-soc-icon,
-.team-soc-link:focus .team-soc-icon {
+.team-soc-link:hover .team-soc-icon, .team-soc-link:focus .team-soc-icon {
   fill: var(--color-white);
 }
 
@@ -660,19 +640,15 @@ address {
   color: var(--icon-main-color);
   transition: border-color var(--transition-d-tf);
 }
+.clients-link:hover, .clients-link:focus {
+  border-color: var(--active-color);
+}
 
 .client-logo {
   fill: currentColor;
   transition: fill var(--transition-d-tf);
 }
-
-.clients-link:hover,
-.clients-link:focus {
-  border-color: var(--active-color);
-}
-
-.clients-link:hover .client-logo,
-.clients-link:focus .client-logo {
+.clients-link:hover .client-logo, .clients-link:focus .client-logo {
   fill: var(--active-color);
 }
 
@@ -698,23 +674,25 @@ address {
   margin-bottom: 9px;
 }
 
-.address-link-map,
-.address-link {
+.address-link-map {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--color-white);
   transition: color var(--transition-d-tf);
 }
-
-.address-link {
-  color: rgba(255, 255, 255, 0.6);
+.address-link-map:hover, .address-link-map:focus {
+  color: var(--active-color);
 }
 
-.address-link-map:hover,
-.address-link-map:focus,
-.address-link:hover,
-.address-link:focus {
+.address-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--transition-d-tf);
+}
+.address-link:hover, .address-link:focus {
   color: var(--active-color);
 }
 
@@ -761,14 +739,12 @@ address {
   color: var(--color-white);
   transition: background-color var(--transition-d-tf);
 }
+.footer-soc-link:hover, .footer-soc-link:focus {
+  background-color: var(--active-color);
+}
 
 .footer-soc-icon {
   fill: currentColor;
-}
-
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-  background-color: var(--active-color);
 }
 
 /* SING UP */
@@ -806,11 +782,9 @@ address {
   color: var(--color-white);
   transition: border-color var(--transition-d-tf);
 }
-
 .footer-input:focus {
   border-color: var(--active-color);
 }
-
 .footer-input::-moz-placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -818,7 +792,6 @@ address {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer-input:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -826,7 +799,6 @@ address {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -854,9 +826,7 @@ address {
   color: var(--color-white);
   transition: background-color var(--transition-d-tf);
 }
-
-.footer-btn:hover,
-.footer-btn:focus {
+.footer-btn:hover, .footer-btn:focus {
   background-color: #188CE8;
 }
 
@@ -893,9 +863,7 @@ address {
   padding: 6px 25px;
   transition: color var(--transition-d-tf), background-color var(--transition-d-tf), box-shadow var(--transition-d-tf);
 }
-
-.filters-btn:hover,
-.filters-btn:focus {
+.filters-btn:hover, .filters-btn:focus {
   color: var(--color-white);
   background-color: var(--active-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -937,21 +905,17 @@ address {
   color: var(--color-white);
   background-color: rgba(33, 150, 243, 0.9);
 }
+.card-link:hover .card-text, .card-link:focus .card-text {
+  transform: translateY(0);
+}
 
 .card-link {
   display: block;
   text-decoration: none;
   transition: box-shadow var(--transition-d-tf);
 }
-
-.card-link:hover,
-.card-link:focus {
+.card-link:hover, .card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.card-link:hover .card-text,
-.card-link:focus .card-text {
-  transform: translateY(0);
 }
 
 .example-title {

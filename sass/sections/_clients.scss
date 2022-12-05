@@ -34,19 +34,19 @@
     color: var(--icon-main-color);
 
     transition: border-color var(--transition-d-tf);
+
+    &:hover,
+    &:focus {
+        border-color: var(--active-color);
+    }
 }
 
 .client-logo {
     fill: currentColor;
     transition: fill var(--transition-d-tf);
-}
 
-.clients-link:hover,
-.clients-link:focus {
-    border-color: var(--active-color);
-}
-
-.clients-link:hover .client-logo,
-.clients-link:focus .client-logo {
-    fill: var(--active-color);
+    .clients-link:hover &,
+    .clients-link:focus & {
+        fill: var(--active-color);
+    }
 }

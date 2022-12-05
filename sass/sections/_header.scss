@@ -53,12 +53,14 @@
 
 .header-nav .link {
     transition: color var(--transition-d-tf);
+
+    &:hover,
+    &:focus {
+        color: var(--active-color);
+    }
 }
 
-.header-nav .link:hover,
-.header-nav .link:focus {
-    color: var(--active-color);
-}
+
 
 .header-nav .link.current {
     position: relative;
@@ -106,13 +108,11 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
-}
 
-.header-contacts-item .link {
     transition: color var(--transition-d-tf);
-}
 
-.header-contacts .link:hover,
-.header-contacts .link:focus {
-    color: var(--active-color);
+    &:hover,
+    &:focus {
+        color: var(--active-color);
+    }
 }

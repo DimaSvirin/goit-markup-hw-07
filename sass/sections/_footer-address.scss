@@ -27,23 +27,30 @@
     margin-bottom: 9px;
 }
 
-.address-link-map,
-.address-link {
+.address-link-map {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     color: var(--color-white);
 
     transition: color var(--transition-d-tf);
+
+    &:hover,
+    &:focus {
+        color: var(--active-color);
+    }
 }
 
 .address-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
-}
-
-.address-link-map:hover,
-.address-link-map:focus,
-.address-link:hover,
-.address-link:focus {
-    color: var(--active-color);
+    
+    transition: color var(--transition-d-tf);
+    
+    &:hover,
+    &:focus {
+        color: var(--active-color);
+    }
 }
