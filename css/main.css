@@ -48,7 +48,7 @@ address {
   font-style: normal;
 }
 
-.link {
+a {
   text-decoration: none;
 }
 
@@ -281,6 +281,7 @@ address {
 
 .contract-link {
   color: var(--active-color);
+  text-decoration: underline;
   margin-left: 5px;
 }
 
@@ -311,30 +312,30 @@ address {
   border-bottom: 1px solid var(--border-color);
 }
 
-.main-nav {
+.main__nav {
   display: flex;
   align-items: center;
 }
 
 .logo {
-  color: var(--active-color);
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  color: var(--active-color);
 }
 
-.logo-header {
+.logo--header {
   color: var(--title-color);
 }
 
-.header-nav {
+.header__nav {
   display: flex;
   align-items: center;
 }
 
-.header-nav-list {
+.menu {
   display: flex;
   margin-left: 93px;
   font-weight: 500;
@@ -344,30 +345,27 @@ address {
   color: var(--title-color);
 }
 
-.header-nav-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-nav-item .link {
+.menu__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--title-color);
-}
-
-.header-nav .link {
   transition: color var(--transition-d-tf);
 }
-.header-nav .link:hover, .header-nav .link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--active-color);
 }
 
-.header-nav .link.current {
+.menu__link.current {
   position: relative;
   color: var(--active-color);
 }
 
-.link.current::after {
+.menu__link.current::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -379,21 +377,21 @@ address {
   transform: scaleX(1.2);
 }
 
-.header-contacts {
+.contacts {
   display: flex;
   margin-left: auto;
 }
 
-.header-contacts-item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-contacts-icon {
+.contacts__icon {
   height: 100%;
   fill: currentColor;
 }
 
-.header-contacts-item .link {
+.contacts__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -406,7 +404,7 @@ address {
   color: var(--main-text-color);
   transition: color var(--transition-d-tf);
 }
-.header-contacts-item .link:hover, .header-contacts-item .link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: var(--active-color);
 }
 
@@ -662,7 +660,7 @@ address {
   display: inline-block;
 }
 
-.logo-footer {
+.logo--footer {
   color: var(--color-white);
 }
 
