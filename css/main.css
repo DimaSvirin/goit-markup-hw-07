@@ -482,7 +482,7 @@ a {
 }
 
 /* What we do? */
-.works__title {
+.work-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -490,7 +490,7 @@ a {
   margin-bottom: 50px;
 }
 
-.works__list {
+.works {
   display: flex;
   gap: 30px;
 }
@@ -600,7 +600,7 @@ a {
   background: var(--color-white);
 }
 
-.clients-title {
+.clients__title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -609,36 +609,36 @@ a {
   margin-bottom: 50px;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.clients-item {
+.clients__item {
   display: block;
 }
 
-.clients-link {
+.clients__link {
   width: 170px;
   height: 92px;
   display: flex;
+  align-items: center;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  align-items: center;
   justify-content: center;
   color: var(--icon-main-color);
   transition: border-color var(--transition-d-tf);
 }
-.clients-link:hover, .clients-link:focus {
+.clients__link:hover, .clients__link:focus {
   border-color: var(--active-color);
 }
 
-.client-logo {
+.clients__logo {
   fill: currentColor;
   transition: fill var(--transition-d-tf);
 }
-.clients-link:hover .client-logo, .clients-link:focus .client-logo {
+.clients__link:hover .clients__logo, .clients__link:focus .clients__logo {
   fill: var(--active-color);
 }
 
